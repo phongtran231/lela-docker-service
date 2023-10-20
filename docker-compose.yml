@@ -21,3 +21,4 @@ services:
     command: redis-server --loglevel warning
     volumes:
       - ./redis-data:/data
+      - ./redis.conf:/usr/local/etc/redis/redis.conf
