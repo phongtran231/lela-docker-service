@@ -18,7 +18,7 @@ services:
     restart: always
     ports:
       - 6379:6379
-    command: redis-server --loglevel warning
+    command: redis-server /usr/local/etc/redis/redis.conf
     volumes:
       - ./redis-data:/data
       - ./redis.conf:/usr/local/etc/redis/redis.conf
